@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import CardList from "../components/CardList";
 import {robots} from "../robots"
 import Scroll from "../components/Scroll";
+import ErrorBoundary from "../components/ErrorBoundary"
 import SearchBox from "../components/SearchBox"
 import "./App.css";
 
@@ -47,7 +48,9 @@ class App extends Component {
                 {/* For example, we passed onSearchChange as PROPS, but it's actually a method. */}
                 <SearchBox searchChange={this.onSearchChange}/>
                 <Scroll>
+                <ErrorBoundary>
                 <CardList robots = {filteredRobots}/>
+                </ErrorBoundary>
                 </Scroll>
             </div>            
         )}}

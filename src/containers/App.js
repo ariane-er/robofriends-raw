@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import CardList from "./CardList";
 import {robots} from "./robots"
+import Scroll from "./Scroll";
 import SearchBox from "./SearchBox"
 import "./App.css";
 
@@ -45,7 +46,9 @@ class App extends Component {
                 <h1 className="f1">Robofriend</h1>
                 {/* For example, we passed onSearchChange as PROPS, but it's actually a method. */}
                 <SearchBox searchChange={this.onSearchChange}/>
+                <Scroll>
                 <CardList robots = {filteredRobots}/>
+                </Scroll>
             </div>            
         )}}
 }

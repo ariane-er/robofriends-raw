@@ -47,7 +47,7 @@ class App extends Component {
 
         return(
             <div className="tc">
-                <h1 className="f1">Robofriend</h1>
+                <h1 className="f1">Robofriends</h1>
                 {/* For example, we passed onSearchChange as PROPS, but it's actually a method. */}
                 <SearchBox searchChange={onSearchChange}/>
                 <Scroll>

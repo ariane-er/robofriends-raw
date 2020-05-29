@@ -1,5 +1,13 @@
 h1 { 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'SEGA LOGO FONT';
     font-weight: 200;
-    color: #0ccac4;
+    color: #ff6aa3;
 }
+
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+    }
+    
